@@ -5,7 +5,7 @@ class Application
     resp = Rack::Response.new
     req = Rack::Request.new(env)
 
-    if req.path=="/ITEM NAME"
+    if req.path=="/items/<ITEM NAME>"
       resp.write "You requested this item"
       resp.write "The price is £3.42"
     else
