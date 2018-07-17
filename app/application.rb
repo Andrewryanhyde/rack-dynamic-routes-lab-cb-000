@@ -5,8 +5,10 @@ class Application
 
     if req.path=='/item/<ITEM NAME>'
       resp.write "You requested this item"
-    else 
+    else
       resp.write "Page not found"
       resp.status = 404
     end
+    resp.finish
+  end
 end
